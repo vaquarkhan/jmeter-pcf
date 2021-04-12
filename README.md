@@ -1,39 +1,14 @@
-= Application Autoscaling
 
-== Reading
 
-Cloud Foundry has some services for auto scaling applications. These serve as a starting point and may work for some of your application portfolio. Read about them link:http://docs.pivotal.io/pivotalcf/autoscaling[on pivotal site].
+-------------------------------------------
 
+- https://www.ibm.com/blogs/cloud-archive/2017/05/scale-microservice-cloud-foundry-containers-openwhisk/
 
 Try following the directions above for your app.
 
 A good start for load testing is jMeter. You can download that link:http://jmeter.apache.org/download_jmeter.cgi[here]. jMeter requires you have a JDK installed!
 
-== Goal
-
-In this section you will leverage Pivotal's Autoscaling Service to scale your microservice.
-
-== Exercise
-
-=== Configuring Autoscaling
-
-. Using Apps Manager, create a new instance of the Autoscaler from the Marketplace.
-+
-* Be sure to name your service instance: <first-initial><last-initial>-cities-service-autoscaler
-* Be sure to select the Gold plan
-* Bind this instance to your cities-service
-
-. Follow the instructions on link:http://docs.pivotal.io/pivotalcf/autoscaling[Autoscaling] to configure and enable your autoscaling service.
-
-. Launch the autoscaling dashboard for your service.
-
-
-=== Set memory to ensure scaling will happen
-
-Be sure to set the memory allocation for your application to 650M to ensure the application will scale.
-
-
-=== Generating Load and Observing Results
+###  Generating Load and Observing Results
 
 . link:http://jmeter.apache.org/download_jmeter.cgi[Apache JMeter] Can be used to generate load.
 
